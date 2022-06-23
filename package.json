@@ -1,0 +1,16 @@
+{
+
+  "dependencies": {
+
+    "bootstrap-fileinput": "^5.2.7",
+
+    "cropper": "^4.1.0",
+
+    "cropperjs": "^1.5.12",
+
+    "jquery": "^3.6.0"
+
+  }
+
+}
+

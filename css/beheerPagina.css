@@ -1,0 +1,593 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+nav {
+    height: 6rem;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    background-image: url("../img/background2.png");
+    background-size: 100% 100%;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling Logo*/
+
+.logo {
+    padding: 2.3vh 3vw;
+    text-align: left;
+    width: 20vw;
+}
+
+.logo img {
+    height: auto;
+    width: 4rem;
+}
+
+/* Styling Navigation Links*/
+.loginLi {
+    margin-left: 2rem !important;
+}
+
+.nav-links {
+    display: flex;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    color: black !important;
+}
+
+.nav-links li a {
+    margin: 10px !important;
+    text-decoration: none;
+    transition: all ease-in-out 350ms;
+    padding: 10px;
+    color: #000 !important;
+}
+
+.nav-links li a:hover {
+    color: #fff !important;
+    background: #a2d05c !important;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.login_button_1 {
+    width: 40vw;
+    position: relative;
+    top: 20px;
+}
+
+i {
+    position: relative;
+    top: 5px;
+}
+
+.nav-links li {
+    position: relative;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.nav-links li a:hover::before {
+    width: 80%;
+}
+
+.fade {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.32) !important;
+}
+
+.fade a {
+    color: #fff;
+}
+
+.fade button {
+    color: #fff;
+}
+
+
+/*Buttons Styling*/
+
+i {
+    color: #70a71c;
+    font-size: 25px;
+}
+
+a {
+    color: #000;
+}
+
+.login-button {
+    padding: 0.6rem 0.8rem;
+    float: right;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2em;
+    color: #000;
+    border: none;
+    background: transparent;
+}
+
+/*Navigation Icon Styling*/
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+.toggle .bars1, .toggle .bars2, .toggle .bars3 {
+    background: rgb(255, 255, 255) !important;
+}
+
+.bars1, .bars2, .bars3 {
+    background: #000 !important;
+}
+
+
+/*Responsive Adding Media Queries*/
+
+@media screen and (max-width: 800px) {
+    nav {
+        position: fixed;
+        z-index: 3;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .nav-links {
+        background: #053742;
+        position: fixed;
+        opacity: 1;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        color: #fff !important;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .nav-links li {
+        opacity: 0;
+
+    }
+
+    .nav-links li a {
+        color: #fff !important;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+    /* Navigation Bar Icon on Click*/
+
+    .toggle .bars1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .bars2 {
+        transition: all 0s ease;
+        width: 0;
+    }
+
+    .toggle .bars3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+/* BUTTON om ja of nee aan te vinken */
+
+
+
+/* Sidenav container */
+
+#sidenav_container {
+    background: rgb(255, 255, 255);
+    width: 360px;
+    position: absolute;
+    margin-top: 95px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.45);
+    padding-bottom: 11px;
+    display: flex;
+    height: 87vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#sidenav_rechts {
+
+}
+
+.sidenav_item, .sidenav_item1, .sidenav_item2 {
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+    width: 200px;
+    border: 4px solid #a2d05c !important;
+    background: #a2d05c !important;
+}
+
+.sidenav_item:hover , .sidenav_item1:hover, .sidenav_item2:hover {
+    background: rgba(191, 191, 191, 0.25) !important;
+    color: rgba(160, 160, 160, 0.71) !important;
+}
+
+.sidenav_links_item {
+    width: 80px;
+    height: 80px;
+    border-width: 4px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 80px;
+    background: rgba(184, 184, 184, 0.29) !important;
+    box-shadow: 4px 4px 8px rgba(196, 196, 196, 0.45);
+}
+.sidenav_links_item i {
+    color: #a2d05c;
+    font-size: 30px;
+}
+
+.sidenav_links_item:hover {
+    background: rgba(184, 184, 184, 0.41) !important;
+}
+
+
+/* Studdenten Containers */
+
+.container-Beheer {
+    display: flex;
+}
+
+#profiel_container, #donatie_container, #accounts_container {
+    overflow-y: auto;
+    width: 100%;
+    height: 87vh;
+    margin-left: 400px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.naam_container, .naam_container1 {
+    margin-bottom: 100px;
+}
+
+.video_container, .video_container1 {
+    margin-bottom: 100px;
+}
+
+.omschrijving_container, .omschrijving_container1 {
+    max-width: 800px;
+}
+
+#button_container, #button_container1 {
+    display: flex;
+    float: right;
+    margin-top: -170px;
+}
+
+/* ja nee button */
+
+/* From cssbuttons.io */
+/* From cssbuttons.io */
+.button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 60px !important;
+    height: 60px !important;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 50% !important;
+    font-weight: 500;
+    color: var(--color);
+}
+
+.button i {
+    color: var(--color);
+    transition: 0.5s;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.button:hover i {
+    color: #fff;
+}
+
+.button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
+
+.bedragen {
+    margin: 50px;
+    margin-left: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #147292;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #264350;
+}
+
+.foto {
+    width: 200px;
+    margin: 20px;
+}
+
+#donaties, #accounts {
+    display: none;
+}
+
+
+/* Table Styles */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+#donatie_table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+    word-wrap:break-word;
+    overflow: hidden;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 18px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+
+.a {
+    color: red;
+    font-size: 20px;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.fl-table {
+    min-width: 500px;
+}
+
+#beheerForm {
+    position: relative;
+    margin-top: 230px;
+}
+
+#sidenav_beheer {
+    border: 3px solid #a2d05c !important;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.b_label {
+    width: 100px !important;
+}
+
+.modal-dialog {
+    width: 400px !important;
+}
+
+.close {
+    background: none;
+    color: #000 !important;
+    border: none;
+    font-size: 25px;
+}

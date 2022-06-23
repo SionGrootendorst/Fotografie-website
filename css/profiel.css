@@ -1,0 +1,657 @@
+/* Limit image width to avoid overflow the container */
+
+#image {
+    max-height: 400px;
+}
+textarea {
+    resize: none;
+    width: 400px;
+    height: 200px;
+}
+
+::-ms-browse {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+::-webkit-file-upload-button {
+    background: #006ee8;
+    border: none;
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.file-preview {
+    display: none;
+}
+
+.file-caption.icon-visible .file-caption-name {
+    padding-left: 40px;
+}
+
+.bi-plus-lg::before {
+    display: none;
+}
+
+textarea {
+    white-space: pre-wrap;
+}
+
+.file_btn {
+    margin: 10px !important;
+}
+
+.crop_btn {
+    margin: 10px;
+}
+
+.cropped {
+    width: 400px;
+}
+
+.cropped_img {
+    display: flex;
+    justify-content: center;
+}
+
+.tegenprestatie {
+    height: 50px;
+}
+
+#tegenprestatie_bedrag {
+    width: 50px;
+}
+
+.tp_input {
+    height: 30px;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.tp_btn {
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+}
+
+.tp_container {
+    margin: 5px;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.tp_bedrag {
+    width: 50px;
+}
+
+.file-footer-buttons {
+    display: none;
+}
+
+.fileinput-upload-button {
+    display: none;
+}
+
+*{
+    margin:0; padding:0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+nav {
+    height: 6rem;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    background-image: url("../img/background2.png");
+    background-size: 100% 100%;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling Logo*/
+
+.logo {
+    padding: 2.3vh 3vw;
+    text-align: left;
+    width: 20vw;
+}
+
+.logo img {
+    height: auto;
+    width: 4rem;
+}
+
+/* Styling Navigation Links*/
+.loginLi {
+    margin-left: 2rem !important;
+}
+
+.nav-links {
+    display: flex;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    color: black !important;
+}
+
+.nav-links li a {
+    margin: 10px !important;
+    text-decoration: none;
+    transition: all ease-in-out 350ms;
+    padding: 10px;
+    color: #000 !important;
+}
+
+.nav-links li a:hover {
+    color: #fff !important;
+    background-color: #a2d05c !important;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.login_button_1 {
+    width: 40vw;
+}
+
+.nav-links li {
+    position: relative;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.nav-links li a:hover::before {
+    width: 80%;
+}
+
+.fade {
+    opacity: 1 !important;
+}
+
+.fade a {
+    color: #fff;
+}
+
+.fade button {
+    color: #fff;
+}
+
+
+/*Buttons Styling*/
+
+i {
+    color: #70a71c;
+    font-size: 25px;
+}
+
+a {
+    color: #000;
+}
+
+.login-button {
+    padding: 0.6rem 0.8rem;
+    float: right;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2em;
+    color: #000;
+    margin: 20px;
+    border: none;
+    background: transparent;
+}
+
+/*Navigation Icon Styling*/
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+.toggle .bars1, .toggle .bars2, .toggle .bars3 {
+    background: rgb(255, 255, 255) !important;
+}
+
+.bars1, .bars2, .bars3 {
+    background: #000 !important;
+}
+
+
+/*Responsive Adding Media Queries*/
+
+@media screen and (max-width: 800px) {
+    nav {
+        position: fixed;
+        z-index: 3;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .nav-links {
+        background: #053742;
+        position: fixed;
+        opacity: 1;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        color: #fff !important;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .nav-links li {
+        opacity: 0;
+
+    }
+
+    .nav-links li a {
+        color: #fff !important;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+    /* Navigation Bar Icon on Click*/
+
+    .toggle .bars1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .bars2 {
+        transition: all 0s ease;
+        width: 0;
+    }
+
+    .toggle .bars3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+}
+
+/* Background container */
+#cssmenu-container {
+    height: 220px;
+    background-color: #CEE3F8;
+}
+
+/* Menu container */
+#cssmenu {
+    display: inline-block; /* The menu will have width as needed, not 100% */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    width: 1150px;
+    border-radius: 0 100px 100px 0;
+
+    transition: .3s;
+    line-height: 1em;
+    overflow: hidden; /* Hide everything that overflows, like shadows */
+}
+
+/* Icons */
+#cssmenu i {
+    transform: scale(1.4);
+}
+
+/* Menu */
+#cssmenu ul {
+    overflow: hidden;
+    display: flex; /* A key part of our menu, displays items side by side, and allows reversing them */
+    flex-direction: row-reverse; /* Reverse the items */
+    /* Reset styles, overwrite browser defaults */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#cssmenu ul li {
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    background: #313382;
+}
+
+/* Menu items */
+#cssmenu ul li a {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 30px 12px 45px; /* Adjusting padding to get the proper space */
+    margin-left: -20px; /* Pull the items to the left, so the rounded right side will get over them */
+    color: white;
+    background-color: #313382;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0 100px 100px 0; /* Get the right side rounded */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Apply the shadow */
+    transition: .3s;
+}
+
+#cssmenu ul li a span {
+    z-index: 2;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Hover event */
+#cssmenu ul li a:hover {
+    background: #006ee8;
+}
+
+    /* Remove the shadow for first item, last in the right side when it gets reversed */
+#cssmenu ul li:first-child a {
+    box-shadow: none;
+}
+
+/* Active item is a bit different */
+#cssmenu ul li.active a {
+    color: #428EFE;
+    background-color: #EEF5FF;
+}
+
+/* Remove the shadow for the active's next item, to match the design more accurately */
+#cssmenu ul li.active + li a {
+    box-shadow: none;
+}
+
+.active {
+    border-radius: 0 100px 100px 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.active::before {
+    pointer-events: none;
+    content: '';
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: #313382;
+    animation: active .5s;
+}
+
+@keyframes active {
+    0% {left: 0}
+    100% {left: 100%}
+}
+
+/* Main CSS */
+
+#form_container {
+    display: flex;
+    justify-content: center;
+}
+
+#profiel_form {
+    padding-top: 200px;
+}
+
+.item_container {
+    display: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.34);
+    width: 1000px;
+    margin-top: -27px;
+    margin-left: -15px;
+    padding: 40px;
+    height: 500px;
+    transition: .3s;
+}
+
+#naam_container {
+    display: block;
+    justify-content: center;
+}
+
+.item_main {
+    width: 100%;
+    height: 300px;
+
+}
+
+.item_buttons {
+    position: relative;
+    float: right;
+    margin-top: 170px;
+}
+
+.naam_gegevens_kloppen {
+    background: #313382;
+    color: #fff;
+}
+
+.naam_gegevens_kloppen:hover {
+    color: #fff;
+}
+
+.profiel_img {
+    position: relative;
+    float: right;
+    margin-top: -100px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.34);
+}
+
+
+.student_info_submit input {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+#error_container {
+   margin: 20px;
+}
+
+#error_container .error {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1130px) {
+    #cssmenu ul li a {
+        font-size: 12px;
+    }
+
+    #cssmenu {
+        width: 1030px;
+    }
+
+    .item_container {
+        width: 920px;
+    }
+}
+
+.item_desc span {
+    color: rgba(0, 0, 0, 0.41)
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-size: 62,5%;
+}
+
+.student_info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+}
+
+.student_info_input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+.student_info:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+}
+
+.video_container {
+    display: flex;
+    height: 50px;
+    margin: 80px;
+}
+
+.video_container label {
+    width: 200px;
+    line-height: 50px;
+    margin: 0;
+    background: #313382;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+}
+
+#profiel_video {
+    border: 2px solid rgba(49, 51, 130, 0.5);
+}
+
+#bedrag_inputs {
+    margin: 50px;
+}
+
+#doel_bedrag {
+    padding: 3px;
+    margin-left: -6px;
+}
+
+#bedrag_label {
+    background: #313382;
+    color: #fff;
+    padding: 5px;
+    margin: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+#omschrijving {
+    padding: 5px;
+    width: 600px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1060px) {
+    #cssmenu {
+        display: none;
+    }
+
+    #profiel_form {
+        padding-top: 100px;
+    }
+
+    #omschrijving {
+        width: 330px;
+    }
+
+    #bedrag_label {
+        border-radius: 12px;
+        margin: 20px;
+    }
+
+    .video_container {
+        margin: 20px;
+    }
+}
+

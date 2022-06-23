@@ -1,0 +1,1075 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 320px;
+    background: url('../img/background.png') 50% 0 no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+    overflow: hidden;
+    transition: .3s;
+}
+
+body {
+    background: #dedede !important;
+    overflow-x: hidden !important;
+}
+
+.zetMidden {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.border > input {
+    position: relative;
+    border-radius: 8px;
+
+}
+
+.geheel {
+    margin-left: 0 !important;
+    z-index: -1;
+    margin-top: -14rem !important;
+    width: fit-content !important;
+    background: #dedede !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.login_p {
+    margin-left: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    color: #000;
+}
+
+i {
+    font-size: 25px;
+    margin-top: 4.7px;
+    color: #70a71c;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+a:hover {
+    color: rgb(26, 115, 218) !important;
+    text-decoration: underline;
+}
+
+.login {
+    display: flex;
+    float: right;
+    padding-top: 1.4rem;
+    padding-right: 2.5rem;
+    padding-left: 15px;
+    border-bottom-left-radius: 25px;
+    cursor: pointer;
+    transition: .5s;
+    color: #000;
+}
+
+.motto {
+    position: relative;
+    bottom: 14rem;
+    padding-left: 10rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 60px !important;
+    color: #fff;
+    
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.bannerIMG {
+    width: 100%;
+}
+
+.divje, .divie {
+    background: #1d1d1d !important;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: 515px !important;
+    max-width: 515px !important;
+    min-height: 515px !important;
+    max-height: 515px !important;
+}
+
+.active {
+    color: rgb(26, 115, 218) !important;
+}
+
+img {
+    height: 100%;
+}
+
+.studentFoto {
+    min-width: 515px !important;
+    min-height: 515px !important;
+    max-width: 515px !important;
+    max-height: 515px !important;
+}
+
+.imgDiv {
+    height: 100%;
+    z-index: 0;
+    transition: .8s;
+}
+
+ul {
+    margin-left: 1.8rem;
+}
+
+li {
+    display: inline-block;
+    margin-left: 15.1px;
+}
+
+.divLogo {
+    flex: 2;
+}
+
+nav {
+    flex: 2;
+    float: left;
+    padding-top: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.imgDiv:hover {
+    transform: scale(1.08);
+    opacity: 0.4;
+}
+
+.naamDiv {
+    position: relative;
+    bottom: 15rem !important;
+    color: #fff;
+    height: 100%;
+    pointer-events: none;
+    font-size: 18px;
+}
+
+#b {
+    display: none;
+    transition: .8s;
+}
+
+#content {
+    transition: .8s;
+}
+
+#content:hover~#b{
+    display: block;
+    transition: .8s;
+}
+
+.naamDiv {
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+    -o-animation: fadeIn 1.5s;
+    -ms-animation: fadeIn 1.5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+  /* Hier komen alle media Queries */
+  @media only screen and (max-width: 2040px) {
+
+    .geheel {
+        margin-left: 0 !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 482px !important;
+        max-width: 482px !important;
+        min-height: 482px !important;
+        max-height: 482px !important;
+    }
+
+    .studentFoto {
+        min-width: 482px !important;
+        min-height: 482px !important;
+        max-width: 482px !important;
+        max-height: 482px !important;
+    }
+    
+}
+
+  @media only screen and (max-width: 1860px) {
+
+    .geheel {
+        margin-left: 0 !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 460px !important;
+        max-width: 460px !important;
+        min-height: 460px !important;
+        max-height: 460px !important;
+    }
+
+    .studentFoto {
+        min-width: 460px !important;
+        min-height: 460px !important;
+        max-width: 460px !important;
+        max-height: 460px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1720px) {
+
+    .geheel {
+        margin-left: 0 !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 430px !important;
+        max-width: 430px !important;
+        min-height: 430px !important;
+        max-height: 430px !important;
+    }
+
+    .studentFoto {
+        min-width: 430px !important;
+        min-height: 430px !important;
+        max-width: 430px !important;
+        max-height: 430px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1560px) {
+
+    .geheel {
+        margin-left: 0.7rem !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 370px !important;
+        max-width: 370px !important;
+        min-height: 370px !important;
+        max-height: 370px !important;
+    }
+
+    .studentFoto {
+        min-width: 370px !important;
+        min-height: 370px !important;
+        max-width: 370px !important;
+        max-height: 370px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .geheel {
+        margin-left: 0 !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 460px !important;
+        max-width: 460px !important;
+        min-height: 460px !important;
+        max-height: 460px !important;
+    }
+
+    .studentFoto {
+        min-width: 460px !important;
+        min-height: 460px !important;
+        max-width: 460px !important;
+        max-height: 460px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1270px) {
+    header {
+        height: 100px;
+        background-image: none !important;  
+    }
+
+    nav {
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+        background-image: url("../img/background2.png");
+        background-size: 100% 100%;
+    }
+    .knop_btn {
+        color: #fff !important;
+    }
+    .login_button {
+        color: #fff !important;
+    }
+
+    .active {
+        color: #4dd21b !important;
+    }
+
+    .motto {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+
+    .geheel {
+        margin-left: 0 !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 410px !important;
+        max-width: 410px !important;
+        min-height: 410px !important;
+        max-height: 410px !important;
+    }
+
+    .studentFoto {
+        min-width: 410px !important;
+        min-height: 410px !important;
+        max-width: 410px !important;
+        max-height: 410px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1175px) {
+
+    .geheel {
+        margin-left: 0.5rem !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 380px !important;
+        max-width: 380px !important;
+        min-height: 380px !important;
+        max-height: 380px !important;
+    }
+
+    .studentFoto {
+        min-width: 380px !important;
+        min-height: 380px !important;
+        max-width: 380px !important;
+        max-height: 380px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1077px) {
+
+    .geheel {
+        margin-left: 4.5rem !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 430px !important;
+        max-width: 430px !important;
+        min-height: 430px !important;
+        max-height: 430px !important;
+    }
+
+    .studentFoto {
+        min-width: 430px !important;
+        min-height: 430px !important;
+        max-width: 430px !important;
+        max-height: 430px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 925px) {
+
+    .geheel {
+        margin-left: 0 !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 455px !important;
+        max-width: 455px !important;
+        min-height: 455px !important;
+        max-height: 455px !important;
+    }
+
+    .studentFoto {
+        min-width: 455px !important;
+        min-height: 455px !important;
+        max-width: 455px !important;
+        max-height: 455px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 830px) {
+
+    .geheel {
+        margin-left: 0 !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 420px !important;
+        max-width: 420px !important;
+        min-height: 420px !important;
+        max-height: 420px !important;
+    }
+
+    .studentFoto {
+        min-width: 420px !important;
+        min-height: 420px !important;
+        max-width: 420px !important;
+        max-height: 420px !important;
+    }
+    
+}
+
+
+@media only screen and (max-width: 750px) {
+
+    .geheel {
+        margin-left: 0.8rem !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-gap: 4px !important;
+    }
+
+    .naamDiv {
+       bottom: -1rem !important;
+       color: #000 !important;
+       animation: none !important;
+    }
+
+    #b {
+        display: block
+    }
+
+    .divie {
+        overflow: visible;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: visible;
+        cursor: pointer;
+        min-width: 240px !important;
+        max-width: 240px !important;
+        min-height: 240px !important;
+        max-height: 240px !important;
+    }
+
+    .divje {
+        margin-top: 1rem !important;
+        min-height: 290px !important;
+        min-height: 290px !important;
+        background: transparent !important;
+    }
+
+    .studentFoto {
+        min-width: 240px !important;
+        min-height: 240px !important;
+        max-width: 240px !important;
+        max-height: 240px !important;
+    }
+
+    .imgDiv:hover {
+        transform: scale(1) !important;
+        opacity: 1 !important;
+    }
+    
+}
+
+@media only screen and (max-width: 730px) {
+
+    .geheel {
+        margin-left: 2rem !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-gap: 4px !important;
+    }
+
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: visible;
+        cursor: pointer;
+        min-width: 220px !important;
+        max-width: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+    }
+
+    .studentFoto {
+        min-width: 220px !important;
+        min-height: 220px !important;
+        max-width: 220px !important;
+        max-height: 220px !important;
+    }
+
+    .divje {
+        margin-top: 1.5rem !important;
+        min-height: 250px !important;
+        min-height: 250px !important;
+        background: transparent !important;
+    }
+    
+}
+
+
+@media only screen and (max-width: 680px) {
+
+    .geheel {
+        margin-left: 4rem !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap: 10px !important;
+    }
+
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: visible;
+        cursor: pointer;
+        min-width: 270px !important;
+        max-width: 270px !important;
+        min-height: 270px !important;
+        max-height: 270px !important;
+    }
+
+    .studentFoto {
+        min-width: 270px !important;
+        min-height: 270px !important;
+        max-width: 270px !important;
+        max-height: 270px !important;
+    }
+
+    .divje {
+        margin-top: 1.5rem !important;
+        min-height: 300px !important;
+        min-height: 300px !important;
+        background: transparent !important;
+    }
+    
+}
+
+@media only screen and (max-width: 590px) {
+
+    .geheel {
+        margin-left: 1.5rem !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap: 10px !important;
+    }
+
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: visible;
+        cursor: pointer;
+        min-width: 270px !important;
+        max-width: 270px !important;
+        min-height: 270px !important;
+        max-height: 270px !important;
+    }
+
+    .studentFoto {
+        min-width: 270px !important;
+        min-height: 270px !important;
+        max-width: 270px !important;
+        max-height: 270px !important;
+    }
+
+    .divje {
+        margin-top: 1.5rem !important;
+        min-height: 300px !important;
+        min-height: 300px !important;
+        background: transparent !important;
+    }
+    
+}
+
+@media only screen and (max-width: 552px) {
+
+    .geheel {
+        margin-left: 1.3rem !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap: 10px !important;
+    }
+
+    .knop_btn {
+        color: #fff !important;
+    }
+    .login_button {
+        color: #fff !important;
+    }
+
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: visible;
+        cursor: pointer;
+        min-width: 250px !important;
+        max-width: 250px !important;
+        min-height: 250px !important;
+        max-height: 250px !important;
+    }
+
+    .studentFoto {
+        min-width: 250px !important;
+        min-height: 250px !important;
+        max-width: 250px !important;
+        max-height: 250px !important;
+    }
+
+    .divje {
+        margin-top: 1.5rem !important;
+        min-height: 280px !important;
+        min-height: 280px !important;
+        background: transparent !important;
+    }
+    
+}
+
+@media only screen and (max-width: 505px) {
+
+    .geheel {
+        margin-left: 0.9rem !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap: 10px !important;
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .zetMidden {
+        width: 100% !important;
+    }
+
+    nav {
+        width: 100% !important;
+    }
+    .knop_btn {
+        color: #fff !important;
+    }
+    .login_button {
+        color: #fff !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: visible;
+        cursor: pointer;
+        min-width: 185px !important;
+        max-width: 185px !important;
+        min-height: 185px !important;
+        max-height: 185px !important;
+    }
+
+    .studentFoto {
+        min-width: 185px !important;
+        min-height: 185px !important;
+        max-width: 185px !important;
+        max-height: 185px !important;
+    }
+
+    .divje {
+        margin-top: 1.5rem !important;
+        min-height: 215px !important;
+        min-height: 215px !important;
+        background: transparent !important;
+    }
+
+    .login_button_1 {
+        position: relative;
+        left: 6rem !important;
+        bottom: 20px !important;
+    }
+
+    html, body {
+        overflow-x: hidden !important;
+      }
+     
+    
+}
+
+@media only screen and (max-width: 489px) {
+
+    .geheel {
+        margin-left: 0.9rem !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap: 10px !important;
+        width: 100%;
+    }
+
+    .zetMidden {
+        width: 100% !important;
+    }
+
+    nav {
+        width: 100% !important;
+    }
+
+    .divje, .divie {
+        background: #1d1d1d !important;
+        overflow: visible;
+        cursor: pointer;
+        min-width: 185px !important;
+        max-width: 185px !important;
+        min-height: 185px !important;
+        max-height: 185px !important;
+    }
+
+    .studentFoto {
+        min-width: 185px !important;
+        min-height: 185px !important;
+        max-width: 185px !important;
+        max-height: 185px !important;
+    }
+
+    .divje {
+        margin-top: 1.5rem !important;
+        min-height: 215px !important;
+        min-height: 215px !important;
+        background: transparent !important;
+    }
+
+    .login_button_1 {
+        position: relative;
+        left: 6rem !important;
+        bottom: 20px !important;
+    }
+
+    
+}
+
+
+
+
+
+
+/* CSS voor de header  */
+
+nav {
+    height: 6rem;
+    width: 100vw;
+    display: flex;
+    z-index: 10;
+}
+
+/* Styling Logo*/
+
+.logo {
+    padding: 2.3vh 3vw;
+    text-align: left;
+    width: 20vw;
+}
+
+.logo img {
+    height: auto;
+    width: 4rem;
+    position: relative;
+    bottom: 2rem;
+}
+
+/* Styling Navigation Links*/
+.loginLi {
+    margin-left: 2rem !important;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    font-weight: 600;
+    line-height: 100px;
+    color: black !important;
+}
+
+.nav-links li a {
+    margin: 10px !important;
+    text-decoration: none;
+    transition: all ease-in-out 350ms;
+    padding: 10px;
+    color: #000 !important;
+}
+
+.nav-links li a:hover {
+    color: #fff !important;
+    background: #a2d05c !important;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.login_button_1 {
+    position: relative;
+    font-size: 20px;
+}
+
+.login_btn {
+    background: #a2d05c;
+    border-radius: 2em;
+    min-width: 400px !important;
+}
+
+i {
+    position: relative;
+    top: 5px;
+}
+
+#waarom {
+    width: 250px;
+}
+
+.nav-links li {
+    position: relative;
+    width: 150px;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.nav-links li a:hover::before {
+    width: 80%;
+}
+
+.fade {
+    opacity: 1 !important;
+}
+
+.fade a {
+    color: #fff;
+}
+
+.fade button {
+    color: #fff;
+}
+
+
+/*Buttons Styling*/
+
+i {
+    color: #70a71c;
+    font-size: 25px;
+}
+
+a {
+    color: #000;
+}
+
+.login_button {
+    padding: 0.6rem 0.8rem;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 2em;
+    color: #000;
+    border: none;
+    background: transparent;
+    font-weight: 900;
+}
+
+
+
+.login_button i {
+    color: #fff;
+    margin: 6px;
+    position: relative;
+    top: 0px;
+}
+
+/*Navigation Icon Styling*/
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+.toggle .bars1, .toggle .bars2, .toggle .bars3 {
+    background: rgb(255, 255, 255) !important;
+}
+
+.bars1, .bars2, .bars3 {
+    background: #000 !important;
+}
+
+
+/*Responsive Adding Media Queries*/
+
+@media screen and (max-width: 800px) {
+    nav {
+        position: fixed !important;
+        z-index: 3;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .nav-links {
+        background: #053742;
+        position: fixed;
+        top: 0;
+        right: 0 !important;
+        opacity: 1;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        color: #fff !important;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .nav-links li {
+        opacity: 0;
+
+    }
+
+    .nav-links li a {
+        color: #fff !important;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+    /* Navigation Bar Icon on Click*/
+
+    .toggle .bars1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .bars2 {
+        transition: all 0s ease;
+        width: 0;
+    }
+
+    .toggle .bars3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+}
+
+nav {
+    max-width: 1600px !important;
+    position: relative;
+}

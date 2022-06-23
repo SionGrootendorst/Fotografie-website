@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+body {
+    background: rgb(243, 243, 243) !important;
+}
+
+nav {
+    height: 6rem;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    background-image: url("../img/background2.png");
+    background-size: 100% 100%;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling Logo*/
+
+.logo {
+    padding: 2.3vh 3vw;
+    text-align: left;
+    width: 20vw;
+}
+
+.logo img {
+    height: auto;
+    width: 4rem;
+}
+
+/* Styling Navigation Links*/
+.loginLi {
+    margin-left: 2rem !important;
+}
+
+.nav-links {
+    display: flex;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    color: black !important;
+}
+
+.nav-links li a {
+    margin: 10px !important;
+    text-decoration: none;
+    transition: all ease-in-out 350ms;
+    padding: 10px;
+    color: #000 !important;
+}
+
+.nav-links li a:hover {
+    color: #fff !important;
+    background-color: #a2d05c;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.login_button_1 {
+    width: 40vw;
+    position: relative;
+    top: 20px;
+}
+
+i {
+    position: relative;
+    top: 5px;
+}
+
+.nav-links li {
+    position: relative;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.nav-links li a:hover::before {
+    width: 80%;
+}
+
+.fade {
+    opacity: 1 !important;
+}
+
+.fade a {
+    color: #fff;
+}
+
+.fade button {
+    color: #fff;
+}
+
+
+/*Buttons Styling*/
+
+i {
+    color: #70a71c;
+    font-size: 25px;
+}
+
+a {
+    color: #000;
+}
+
+.login-button {
+    padding: 0.6rem 0.8rem;
+    float: right;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2em;
+    color: #000;
+    border: none;
+    background: transparent;
+}
+
+/*Navigation Icon Styling*/
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+.toggle .bars1, .toggle .bars2, .toggle .bars3 {
+    background: rgb(255, 255, 255) !important;
+}
+
+.bars1, .bars2, .bars3 {
+    background: #000 !important;
+}
+
+
+/*Responsive Adding Media Queries*/
+
+@media screen and (max-width: 800px) {
+    nav {
+        position: fixed;
+        z-index: 3;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .nav-links {
+        background: #053742;
+        position: fixed;
+        opacity: 1;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        color: #fff !important;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .nav-links li {
+        opacity: 0;
+
+    }
+
+    .nav-links li a {
+        color: #fff !important;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+    /* Navigation Bar Icon on Click*/
+
+    .toggle .bars1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .bars2 {
+        transition: all 0s ease;
+        width: 0;
+    }
+
+    .toggle .bars3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+}
+
+
+/* Css pagina */
+
+.knoppieDiv {
+    padding-top: 10rem;
+    float: right;
+    margin-right: 30rem;
+}
+
+.geheelProfiel {
+    padding-top: 10rem;
+    margin-left: 21.2rem;
+    transition: .5s;
+}
+
+h1 {
+    color: rgb(97, 97, 97) !important;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+}
+
+iframe {
+    margin-top: 1.5rem !important;
+    box-shadow: 0 0 4px grey;
+    border-radius: 2px !important;
+}
+
+.beschrijving {
+    margin-top: 2.5rem !important;
+    font-size: 14px;
+    color: rgb(97, 97, 97) !important;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 35rem;
+    transition: .3s;
+}
+
+.tegenprestaties {
+    margin-top: 1rem !important;
+    color: rgb(97, 97, 97) !important;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+strong {
+    font-weight: bold !important;
+    color: rgb(97, 97, 97) !important;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+td {
+    width: 200px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.td {
+    color: rgb(97, 97, 97) !important;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold !important;
+}
+
+
+/* CSS voor de fotos */
+
+.fotos {
+    display: flex;
+    width: 65%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.fotoDiv {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.werk {
+    width: 100% !important;
+    height: auto !important;
+    cursor: pointer;
+}
+
+/* Css voor knop */
+/* only animate if the device supports hover */
+@media (hover: hover) {
+    #creditcard {
+        /*  set start position */
+        transform: translateY(110px);
+        transition: transform 0.1s ease-in-out;
+        /*  set transition for mouse enter & exit */
+    }
+
+    #money {
+        /*  set start position */
+        transform: translateY(180px);
+        transition: transform 0.1s ease-in-out;
+        /*  set transition for mouse enter & exit */
+    }
+
+    button:hover #creditcard {
+        transform: translateY(0px);
+        transition: transform 0.2s ease-in-out;
+        /*  overide transition for mouse enter */
+    }
+
+    button:hover #money {
+        transform: translateY(0px);
+        transition: transform 0.3s ease-in-out;
+        /*  overide transition for mouse enter */
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.25rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.button:hover .button__text span {
+    transform: translateY(-0.25rem);
+    transition: transform .2s ease-in-out;
+}
+
+/* styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+.button {
+    border: none;
+    outline: none;
+    background-color: purple;
+    padding: 0.5rem 60px 0.6rem 1.5rem;
+    position: relative;
+    border-radius: 8px;
+    letter-spacing: 0.7px;
+    background-color: #5086bd;
+    color: #fff;
+    font-size: 19px;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+    margin-top: 12rem !important;
+    float: right !important;
+    margin-right: 15rem !important;
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+.button__svg {
+    position: absolute;
+    overflow: visible;
+    bottom: 6px;
+    right: 0.2rem;
+    height: 140%;
+}
+
+.doneerKnop {
+    text-decoration: none;
+    color: #fff;
+}
+
+.doneerKnop:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 1528px) {
+    .beschrijving {
+        margin-right: 25rem;
+    }
+
+    .button {
+        padding: 0.8rem 70px 0.8rem 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1401px) {
+    .geheelProfiel {
+        margin-left: 15rem;
+    }
+
+    .beschrijving {
+        margin-right: 20rem;
+    }
+
+    .button {
+        padding: 0.5rem 50px 0.5rem 1rem;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1193px) {
+    .geheelProfiel {
+        margin-left: 12rem;
+    }
+
+    .beschrijving {
+        margin-right: 15rem;
+    }
+
+    .button {
+        padding: 0.5rem 50px 0.5rem 1rem;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1087px) {
+    .geheelProfiel {
+        margin-left: 10rem;
+    }
+
+    .beschrijving {
+        margin-right: 12rem;
+    }
+
+    .button {
+        padding: 0.5rem 50px 0.5rem 1rem;
+        font-size: 15px;
+        margin-right: 11rem !important;
+    }
+}
+
+@media screen and (max-width: 986px) {
+    .geheelProfiel {
+        margin-left: 8rem;
+    }
+
+    .beschrijving {
+        margin-right: 10rem;
+    }
+
+    .button {
+        padding: 0.5rem 50px 0.5rem 1rem;
+        font-size: 15px;
+        margin-right: 8rem !important;
+    }
+}
+
+@media screen and (max-width: 873px) {
+    .geheelProfiel {
+        margin-left: 6rem;
+    }
+
+    .beschrijving {
+        margin-right: 8rem;
+    }
+
+    .button {
+        padding: 0.5rem 50px 0.5rem 1rem;
+        font-size: 15px;
+        margin-right: 5rem !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .geheelProfiel {
+        margin-left: 4rem;
+    }
+
+    .beschrijving {
+        margin-right: 6rem;
+    }
+
+    .button {
+        padding: 0.5rem 50px 0.5rem 1rem;
+        font-size: 15px;
+        margin-right: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 696px) {
+    .geheelProfiel {
+        text-align: center !important;
+        margin-left: 0 !important;
+    }
+
+    .beschrijving {
+        margin: 0 4rem;
+        text-align: left !important;
+    }
+
+    .button {
+        padding: 0.5rem 50px 0.5rem 1rem;
+        font-size: 15px;
+        margin-right: 2rem !important;
+        float: left !important;
+        margin-top: 8rem !important;
+        margin-left: 18rem;
+    }
+
+    h1 {
+        margin-top: 1.5rem !important;
+    }
+
+    .fotos {
+        display: block;
+        width: 100%;
+    }
+
+    .bedragen {
+        margin-left: 15rem;
+    }
+
+    table {
+        text-align: left;
+    }
+
+    .fotoDiv {
+        margin-top: 1rem !important;
+        
+    }
+
+    .werk {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .geheelProfiel {
+        text-align: center !important;
+        margin-left: 0 !important;
+    }
+
+    .beschrijving {
+        margin: 0 3rem;
+        text-align: left !important;
+        font-size: 19px;
+    }
+
+    .button {
+        padding: 0.5rem 50px 0.5rem 1rem;
+        font-size: 15px;
+        margin-right: 2rem !important;
+        float: left !important;
+        margin-top: 8rem !important;
+        margin-left: 15.5rem;
+    }
+
+    .bedragen {
+        margin-left: 12rem;
+    }  
+    
+    .tegenprestaties {
+        font-size: 19px;
+    }
+
+    td {
+        font-size: 16px !important;
+        width: 260px !important;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .geheelProfiel {
+        text-align: center !important;
+        margin-left: 0 !important;
+    }
+
+    .beschrijving {
+        margin: 0 3rem;
+        text-align: left !important;
+        font-size: 19px;
+    }
+
+    .button {
+        padding: 0.5rem 50px 0.5rem 1rem;
+        font-size: 15px;
+        margin-right: 2rem !important;
+        float: left !important;
+        margin-top: 8rem !important;
+        margin-left: 13rem;
+    }
+
+    .bedragen {
+        margin-left: 12rem;
+    }  
+    
+    .tegenprestaties {
+        font-size: 19px;
+    }
+
+    td {
+        font-size: 16px !important;
+        width: 260px !important;
+    }
+
+    iframe {
+        width: 450px !important;
+        height: 250px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+
+    .beschrijving {
+        margin: 0 1rem;
+        text-align: left !important;
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 0.5rem 50px 0.5rem 1rem;
+        font-size: 15px;
+        margin-right: 2rem !important;
+        float: left !important;
+        margin-top: 8rem !important;
+        margin-left: 10rem;
+    }
+
+    .bedragen {
+        margin-left: 8rem;
+    }  
+    
+    .tegenprestaties {
+        font-size: 15px;
+    }
+
+    td {
+        font-size: 14px !important;
+        width: 260px !important;
+    }
+
+    iframe {
+        width: 450px !important;
+        height: 250px !important;
+    }
+
+    nav {
+        width: 100% !important;
+    }
+
+    .fotos {
+        width: 100% !important;
+    }
+
+    .fotoDiv {
+        margin-left: 1px !important;
+    }
+}
